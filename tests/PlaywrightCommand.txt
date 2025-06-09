@@ -1,0 +1,9 @@
+  -----------------------------------------------Execution with Tag----------------
+If you have marked as Tags like Smoke and Sanity
+  npx playwright test --grep "@smoke"
+As per your test cases name in test like "test('Blazedemo', async ({ page }) => {"
+  npx playwright test --grep "Blazedemo"
+Execute Test which has both matching tags
+npx playwright test --grep "(?=.*Unique Order)(?=.*@smoke)"
+List out all test cases which are marked as @smoke without executing.
+  npx playwright test --list --grep "@smoke"
