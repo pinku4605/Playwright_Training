@@ -13,7 +13,7 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  testDir: './tests/UI_Special_Control/',
+  testDir: './tests/UI_Tests/',
   /* Run tests in files in parallel */
   fullyParallel: true,
   workers: 2,
