@@ -1,4 +1,5 @@
 // @ts-check
+require('dotenv').config();
 import { defineConfig, devices } from '@playwright/test';
 
 /**
@@ -13,10 +14,15 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  testDir: './tests/UI_Tests/',
+  //testDir: './tests',
+  //testDir: './tests/UI_tests/',
+  //testDir: './tests/ZeroBank_Test_PageObject/',
+  //testDir: './tests/UI_SpecialControls/',
+  testDir: './tests/API_test/',
+  //timeout : 500000,
   /* Run tests in files in parallel */
   fullyParallel: true,
-  workers: 2,
+  workers : 1,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -28,15 +34,16 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://localhost:3000',
+    // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on',
-    headless:false,
-    screenshot: 'on',
-    video:'on',
-    ...devices['Desktop Chrome'],
-    viewport:{width:1536,height:864},
+    trace: 'off',
+    headless: false,
+    screenshot : 'on',
+    video : 'off',
+    ignoreHTTPSErrors: true
+    //...devices['Desktop Chrome'],
+    //viewport:{width:1536,height:864},
     //colorScheme: 'dark',
     // launchOptions:{
     //   args:["--start-fullscreen"]
@@ -85,9 +92,8 @@ export default defineConfig({
   /* Run your local dev server before starting the tests */
   // webServer: {
   //   command: 'npm run start',
-  //   url: 'http://localhost:3000',
+  //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
-  // }, 
-  
+  // },
 });
 

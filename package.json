@@ -5,19 +5,22 @@
   "scripts": {
     "Smoke_Test": "playwright test --grep @smoke",
     "Sanity_Test": "playwright test --grep @sanity",
-    "MyTest":"playwright test WebOrder_CreateOrder.spec --headed",
-    "Sanity_Test_Config":"playwright test --config=sanity.config.js"
+    "MyTest": "playwright test WebOrder_CreateOrder.spec --headed",
+    "Sanity_Test_Config": "playwright test --config=sanity.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.52.0",
+    "@playwright/test": "^1.53.0",
     "@types/node": "^22.15.21"
   },
   "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "csv-parse": "^5.6.0",
+    "dotenv": "^16.5.0",
     "xlsx": "^0.18.5"
   }
 }
