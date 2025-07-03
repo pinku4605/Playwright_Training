@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test')
 const { AccessToken } = require('./BaseTest')
-const notes = require('../TestData/create_notes.json') // No destructuring here
+const notes = require('./TestData/create_notes.json') // No destructuring here
 
 test.describe('Create Notes API Testing', () => {
   const baseUrl = 'https://practice.expandtesting.com'

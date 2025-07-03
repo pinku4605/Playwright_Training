@@ -14,11 +14,11 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  //testDir: './tests',
+  testDir: './tests',
   //testDir: './tests/UI_tests/',
   //testDir: './tests/ZeroBank_Test_PageObject/',
   //testDir: './tests/UI_SpecialControls/',
-  testDir: './tests/API_test/',
+  //testDir: './tests/API_test/',
   //timeout : 500000,
   /* Run tests in files in parallel */
   fullyParallel: true,

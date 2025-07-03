@@ -1,0 +1,38 @@
+[
+    {
+      "test_case": "TC1",
+      "departure_city": "San Diego", 
+      "destination_city": "Berlin",
+      "flight": "4346", 
+      "airline": "Lufthansa", 
+      "name": "Sudipta Mohapatra",
+      "address": "LIG 217",
+      "city": "Bhubaneswar",
+      "state": "Paris", 
+      "zip_code": "751012",
+      "card_type": "Visa",
+      "credit_card_number": "6543231456",
+      "month": "11", 
+      "year": "2025",
+      "name_on_card": "Sudipta Mohapatra",
+      "remember_me": "true" 
+    },
+    {
+      "test_case": "TC2",
+      "departure_city": "Portland", 
+      "destination_city": "Dublin",
+      "flight": "234", 
+      "airline": "United Airlines", 
+      "name": "Sudipta Mohapatra",
+      "address": "LIG 217",
+      "city": "Bhubaneswar",
+      "state": "Paris", 
+      "zip_code": "751012",
+      "card_type": "American Express",
+      "credit_card_number": "8475768798",
+      "month": "12", 
+      "year": "2025",
+      "name_on_card": "Sudipta Mohapatra",
+      "remember_me": "false" 
+    }
+  ]

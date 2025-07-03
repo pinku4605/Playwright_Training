@@ -1,0 +1,28 @@
+[
+  {
+    "test_case": "TC1",
+    "username": "Admin", 
+    "password": "admin123",
+    "expected_result": "Logout"
+  },
+  { 
+      "test_case": "TC2",
+      "username": "wrong@example.com", 
+      "password": "admin123",
+      "expected_result": "Invalid credentials"
+    },
+    { 
+      "test_case": "TC3",
+      "username": "Admin", 
+      "password": "WrongPassword",
+      "expected_result": "Invalid credentials"
+    },
+    { 
+      "test_case": "TC4",
+      "username": "", 
+      "password": "",
+      "expected_result": "Required"
+    }
+
+
+]
